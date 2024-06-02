@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tenox App</title>
+    <meta name="description" content="Explore all tenoxui styles you may need to know." />
+    <link rel="shortcut icon" href="https://tenoxui.web.app/img/favicon.ico" type="image/x-icon" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- google icons -->
+    <link href="https://cdn.jsdelivr.net/gh/nousantx/tenoxui-pages/css/google-icons.css" rel="stylesheet" />
+    <!-- tenox icons -->
+    <link href="https://cdn.jsdelivr.net/gh/nousantx/tenoxui-pages/css/tenox-icons.css" rel="stylesheet" />
+    <!-- tenoxui script -->
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tenoxui/property"></script>
+    <script src="./src/js/style.js"></script>
+    <!-- css styles :D -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Geologica, sans-serif;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="position-sticky px-2rem py-1rem d-flex ai-center jc-[space-between]">
+      <header>
+        <a href="/">
+          <h1 class="text-base font-medium flex-center gap-6px">
+            <span class="txi ti-vantenox box-28px btn-icon bg-#77777720 br-4px tc-$primary flex-center"></span>
+            Tenox Mode
+          </h1>
+        </a>
+      </header>
+      <div class="flex-center gap-1rem">
+        <a href="https://github.com/nousantx" class="box-35px flex-center btn-icon">
+          <span class="txi ti-github_square text-lg"></span>
+        </a>
+        <button
+          onclick="darkModeToggler()"
+          class="bg-none border-none outline-none box-35px btn-icon bg-#77777720 br-4px"
+        >
+          <span id="darkmode-icon" class="ms-sharp text-lg tc-inherit">nights_stay</span>
+        </button>
+      </div>
+    </nav>
+    <main class="w-mx-1440px h-mn-100vh mx-auto">
+      <nav class="position-sticky t-0 bg-#77777710 p-1rem backdrop-[blur(10px)]">
+        <div class="w-100% d-flex ai-center gap-1rem">
+          <button
+            onclick="toggleSidebar()"
+            class="bg-none border-none outline-none box-35px btn-icon bg-#77777720 br-4px"
+          >
+            <span id="darkmode-icon" class="ms-sharp text-xl tc-inherit">menu</span>
+          </button>
+          <div class="flex-center gap-8px">
+            <a href="/" class="box-40px btn-icon flex-center">
+              <span class="ms-sharp tc-$primary text-lg">home</span>
+            </a>
+            <span class="tc-$light-opa text-sm mr-4px">/</span>
+            <a href="/" class="box-40px btn-icon flex-center text-sm"> docs </a>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="d-flex ai-center jc-[space-between]">
+            <h2 class="text-xl font-medium">Explore Content</h2>
+            <button onclick="toggleSidebar()" class="bg-none border-none outline-none box-35px btn-icon">
+              <span id="darkmode-icon" class="ms-sharp text-xl tc-inherit">close</span>
+            </button>
+          </div>
+          <ul class="mt-1.5rem">
+            <li class="mt-8px">
+              <a href="#" class="">Docs1</a>
+            </li>
+            <li class="mt-8px">
+              <a href="#" class="">Docs1</a>
+            </li>
+            <li class="mt-8px">
+              <a href="#" class="">Docs1</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="p-2rem">
+        <header>
+          <div class="flex-center jc-[flex-start] flex-wrap-wrap gap-8px">
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">grid_view</span> UI Component
+            </p>
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">style</span> Styles
+            </p>
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">draw</span> Easy to Customize
+            </p>
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">bolt</span> Fast and Efficient
+            </p>
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">sort</span> Utility First
+            </p>
+            <p class="badge bg-#77777720 text-xs px-8px py-4px br-4px flex-center gap-4px">
+              <span class="ms-sharp text-sm">settings_applications</span> Less Configuration
+            </p>
+          </div>
+          <h1 class="text-4xl lh-1.4 mt-1rem">
+            This website's styles built with
+            <span class="tc-$primary bg-#77777720 px-6px br-6px">tenoxui/css</span>!
+          </h1>
+          <p class="mt-1.5rem">Explore all possibilities with tenoxui css. Using minimal code to build your styles.</p>
+        </header>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w-mx-1440px mx-auto p-1rem px-2rem d-flex fd-column jc-center">
+      <h3 class="text-lg d-flex ai-center gap-6px">
+        NOuSantx<span class="mi-sharp tc-$primary text-xs">verified</span>
+      </h3>
+      <span class="text-xs tc-$text-para">&copy; 2024. Built with TenoxUI.</span>
+    </footer>
+
+    <!-- script -->
+    <script>
+      // config script
+      use({
+        property: [
+          property,
+          {
+            outline: "outline",
+            "td-li": "textDecorationLine"
+          }
+        ]
+      });
+      // this page styles
+      makeStyles({
+        ":root":
+          "[--dark]-#161a1e [--dark-opa]-#161a1e20 [--light]-#e0e4e8 [--light-opa]-#e0e4e820 [--text-para]-#c7cdd4 [--primary]-#ccf654", // root property
+        body: "bg-$dark tc-$light tr-prop-[color,\\_background-color] tr-time-150ms",
+        "h1, h2, h3, h4": ".font-semibold ls--0.030em",
+        p: ".text-base .tracking-tight tc-$text-para",
+        a: "td-li-none tc-$text-para hover:tc-$primary .trans-d",
+        ".btn-icon": "tc-inherit hover:tc-$primary",
+        ".sidebar": "position-fixed w-mn-300px h-100vh bg-$dark t-0 l--100% p-2rem z-9999 tr-time-250ms"
+      });
+      // utility classes
+      makeStyles(utils);
+      // init tenoxui
+      tenoxui();
+    </script>
+    <script src="./src/js/darkmode.js"></script>
+    <script src="./src/js/sidebar.js"></script>
+  </body>
+</html>
